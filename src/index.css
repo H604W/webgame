@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #030712; /* gray-950 */
+  overflow-x: hidden;
+}
+
+/* 熔岩流光渐变文字 */
+.text-lava {
+  background: linear-gradient(
+    270deg,
+    #f97316, #ef4444, #a855f7, #6366f1, #3b82f6, #a855f7, #ef4444, #f97316
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: lava-flow 4s ease infinite;
+}
